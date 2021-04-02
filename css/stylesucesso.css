@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Shadows+Into+Light&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: lightgray;
+}
+
+input {
+  outline-color: lightgray;
+}
+
+.container-sucesso {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  width: 960px;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.content-sucesso {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+}
+
+.title {
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.title-sucesso {
+  color: #fbb03b;
+}
+
+#titulo-logo {
+  font-family: 'Architects Daughter', cursive;
+  font-weight: bolder;
+}
+
+.description-sucesso {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 60px;
+  color: #7f8c8d;
+}
+
+#link {
+  color: #fbb03b;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/*** Esqueceu.html ***/
+
+.btn {
+  border-radius: 15px;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 10px;
+  padding: 10px 50px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 150px;
+  align-self: center;
+  border-width: 0;
+  margin-top: 1rem;
+}
+
+.btn-secondary {
+  background-color: #fbb03b;
+  border: 1px solid #fbb03b;
+  transition: background-color 0.7s;
+}
+
+.btn-secondary:hover {
+  background-color: #fff;
+  border: 1px solid #fbb03b;
+  color: #fbb03b;
+}
+
+input {
+  font-size: 15px;
+  font-weight: 300;
+
+  line-height: 40px;
+  border: none;
+  background-color: #ecf0f1;
+}
+
+.label-input {
+  background-color: #ecf0f1;
+  display: flex;
+  align-items: center;
+  margin: 8px;
+}
+
+.icon-modify {
+  color: #7f8c8d;
+  padding: 0 5px;
+}

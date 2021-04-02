@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Cadastrar árvore</title>
+  <link rel="stylesheet" href="css/home.css">
+  <!-- CSS da tabela Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/0ce4b18319.js" crossorigin="anonymous"></script>
+  <!-- CSS da tabela Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/css/bootstrap-select.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.1/js/bootstrap-select.min.js"></script>
+  <script src="/js/app.js"></script>
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.5.js" type="text/javascript"></script>
+</head>
+
+<body>
+  <header>
+    <nav id="page-nav">
+      <!-- [THE HAMBURGER] -->
+      <label for="hamburger">&#9776;</label>
+      <input type="checkbox" id="hamburger"/>
+      <!-- [MENU ITEMS] -->
+      <ul style="margin-left: 20px;">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="pesquisar.html">Pesquisar</a></li>
+        <li><a href="cadastrar-arvore.html">Cadastrar</a></li>
+        <li><a href="guia-uso.html">Guia de uso</a></li>
+        <li><a href="" style="margin-left: 950px;"><i class="fas fa-power-off" style="margin-left:10px;font-size:large;"></i></a></li>
+      </ul>
+    </nav>
+  </header>
+
+<div class="conteudo" id="conteudo-cadastro-arvore">
+
+  <form class="formulario-cadastro-arvore">
+    
+   <div class="campos-arvore"> 
+    <label class="label-cadastro-arvore">Nome Popular:</label>
+    <input type="text" id="campo-cadastro-arvore">
+   </div>
+
+   <div class="campos-arvore">
+    <label class="label-cadastro-arvore">Nome Científico:</label>
+    <input type="text" id="campo-cadastro-arvore">
+   </div>
+
+  <div class="campos-arvore">
+     <label class="label-cadastro-arvore">Família:</label>
+     <select class= "selectpicker" name="select[multiple]" required></select>
+     <input type="text" id="campo-cadastro-arvore" >
+  </div><!-- Fim div campos-arvore -->
+
+  <div class="campos-arvore">
+      <label class="label-cadastro-arvore">Formação:</label>
+      <select class= "selectpicker" name="select[multiple]" required></select>
+      <input type="text" id="campo-cadastro-arvore">
+  </div><!-- Fim div campos-arvore -->
+
+  <div class="campos-arvore">
+    <label class="label-cadastro-arvore">Manejo:</label>
+    <select class= "selectpicker" name="select[multiple]" required></select>
+    <input type="text" id="campo-cadastro-arvore">
+   </div>
+
+  <div class="campos-arvore">
+      <label class="label-cadastro-arvore">Ressistência:</label>
+      <select class= "selectpicker" name="select[multiple]" required></select>
+      <input type="text" id="campo-cadastro-arvore">
+  </div><!-- Fim div campos-arvore -->
+
+  <div class="campos-arvore">
+      <label class="label-cadastro-arvore">Biomassa:</label>
+      <select class= "selectpicker" name="select[multiple]" required></select>
+      <input type="text" id="campo-cadastro-arvore">
+  </div><!-- Fim div campos-arvore -->
+
+  <div class="campos-arvore">
+      <label class="label-cadastro-arvore">Densidade Copa:</label>
+      <select class= "selectpicker" name="select[multiple]" required></select>
+      <input type="text" id="campo-cadastro-arvore">
+  </div><!-- Fim div campos-arvore -->
+
+  <div class="campos-arvore">
+       <label class="label-cadastro-arvore">Uso Madeira:</label>
+       <select class= "selectpicker" name="select[multiple]" required></select>
+       <input type="text" id="campo-cadastro-arvore">
+  </div><!-- Fim div campos-arvore -->
+
+  <div class="campos-arvore">
+    <label class="label-cadastro-arvore">Preço Madeira:</label>
+    <input type="text" id="campo-cadastro-arvore">
+  </div>
+  </form>
+
+
+
+ <!-- <form class="formulario-cadastro-arvore">
+    
+    <div class="form-group row" id="campos-form">
+      <label for="colFormLabel" class="col-sm-2 col-form-label">Nome Popular:</label>
+      <div class="col-sm-10">
+      <input type="text" class="form-control" id="colFormLabel">
+      </div>
+    </div>
+    <div class="form-group row" id="campos-form">
+      <label for="colFormLabel" class="col-sm-2 col-form-label">Nome Científico:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="colFormLabel">
+      </div>
+    </div>
+    <div class="form-group row" id="campos-form">
+      <select for="colFormLabel" class="col-sm-2 col-form-label">Família:</select>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="colFormLabel">
+      </div>
+    </div>
+    <div class="form-group row" id="campos-form">
+      <select for="colFormLabel" class="col-sm-2 col-form-label">Formação:</select>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="colFormLabel">
+      </div>
+    </div>
+    <div class="form-group row" id="campos-form">
+      <select for="colFormLabel" class="col-sm-2 col-form-label">Manejo:</select>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="colFormLabel">
+      </div>
+    </div>
+    <div class="form-group row" id="campos-form">
+      <label for="colFormLabel" class="col-sm-2 col-form-label">Ressistência:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="colFormLabel">
+      </div>
+    </div>
+    <div class="form-group row" id="campos-form">
+      <select for="colFormLabel" class="col-sm-2 col-form-label">Biomassa:</select>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="colFormLabel">
+      </div>
+    </div>
+    <div class="form-group row" id="campos-form">
+      <select for="colFormLabel" class="col-sm-2 col-form-label">Densidade Copa:</select>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="colFormLabel">
+      </div>
+    </div>
+    <div class="form-group row" id="campos-form">
+      <select for="colFormLabel" class="col-sm-2 col-form-label">Uso Madeira:</select>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="colFormLabel">
+      </div>
+    </div>
+    <div class="form-group row" id="campos-form">
+      <label for="colFormLabel" class="col-sm-2 col-form-label">Preço Madeira:</label>
+      <div class="col-sm-10">
+        <input type="text" class="form-control" id="colFormLabel">
+      </div>
+    </div>
+        
+  </form>-->
+  <button type="submit" class="btn-home" id="btn-cadastrar-arvore">Cadastrar Árvore</button>
+
+</div>  <!-- [Fim Div conteudo] -->
+
+<footer class="footer" id="myFooter">
+  <div class="second-bar">
+      <div class="social-icons">
+         <img src="images/logo2.png" alt="" style="height: 40px; width: 50px; margin-left: 10px;">
+         <h2 class="logo"><a href="home.html" id="logo-footer" style="font-weight: bolder; font-size:x-large; "> ForestApp </a></h2>
+         <a href="" class="email"><i class="fas fa-envelope"></i></a>
+         <a href="" class="twitter"><i class="fa fa-twitter"></i></a>
+         <a href="" class="facebook"><i class="fa fa-facebook"></i></a>
+         <a href="" class="instagram"><i class="fa fa-instagram"></i></a>
+       
+      </div><!-- [Fim Div social-icons] -->
+  </div><!-- [Fim Div second-bar] -->
+</footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+</html>
